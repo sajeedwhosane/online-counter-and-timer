@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Offline Ticket Counter & Timer</title>
 </head>
 <body>
+    <!-- section which includes the most important information that user wants to see right away-->
     <section id="imp_info">
         <div id="aux">
             <label for="aux_status">AUX</label>
@@ -31,5 +33,53 @@
             <h2 id="avg_aht"></h2>
         </div>
     </section>
+    <!-- section which includes the whole login session's data -->
+     <section id="l_data">
+        <div id="tabular_d">
+            <div id="table">
+                <!-- heading for the tabular data -->
+                <div class="row"> 
+                    <div class="cell header">S.no</div>
+                    <div class="cell header">Start time</div>
+                    <div class="cell header">End Time</div>
+                    <div class="cell header">Time Elapsed</div>
+                    <div class="cell header">Tickets Done</div>
+                    <div class="cell header">AHT</div>
+                </div>
+                <div class="row">
+                    <div class="cell">1.</div>
+                    <div class="cell">06:00</div>
+                    <div class="cell">07:00</div>
+                    <div class="cell">01:00</div>
+                    <div class="cell">25</div>
+                    <div class="cell">144</div>
+                </div>
+                <div class="row">
+                    <div class="cell">2.</div>
+                    <div class="cell">07:15</div>
+                    <div class="cell">08:15</div>
+                    <div class="cell">01:00</div>
+                    <div class="cell">25</div>
+                    <div class="cell">144</div>
+                </div>
+                <div class="row">
+                    <div class="cell">3.</div>
+                    <div class="cell">08:30</div>
+                    <div class="cell">10:30</div>
+                    <div class="cell">02:00</div>
+                    <div class="cell">50</div>
+                    <div class="cell">144</div>
+                </div>
+                <div class="row">
+                    <div class="cell">4.</div>
+                    <div class="cell">10:40</div>
+                    <div class="cell">14:40</div>
+                    <div class="cell">04:00</div>
+                    <div class="cell">100</div>
+                    <div class="cell">144</div>
+                </div>
+            </div>
+        </div>
+     </section>
 </body>
 </html>

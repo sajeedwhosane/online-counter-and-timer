@@ -1,0 +1,21 @@
+#table {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+
+}
+
+.cell {
+    flex-basis: 20%;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.header {
+    font-weight: bold;
+}
