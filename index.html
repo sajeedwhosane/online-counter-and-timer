@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Offline Ticket Counter & Timer</title>
+    
 </head>
 <body>
+    <h1 id="heading">Offline Ticket Counter & Timer</h1>
     <!-- section which includes the most important information that user wants to see right away-->
     <section id="imp_info">
         <div id="aux">
@@ -18,13 +20,13 @@
                 <option value="Training">Training</option>
             </select>
         </div>
-        <div id="l_timer">
+        <div id="timer">
             <span id="l_timer"></span>
         </div>
         <div id="counter">
-            <h2 id="counting"></h2>
-            <button >+</button>
-            <button >-</button>   
+            <span id="counting">0</span>
+            <button onclick="increment()">+</button>
+            <button onclick="decrement()">-</button>   
         </div>
         <div id="aht_current">
             <h2 id="c_aht"></h2>
@@ -81,5 +83,23 @@
             </div>
         </div>
      </section>
+     <script>
+        // FUNCTION TO INCREMENT THE COUNTER
+        function increment(){
+            var c=document.getElementById("counting").innerHTML;
+            var c1=parseInt(c);
+            document.getElementById("counting").innerHTML=c1+1;
+        }
+
+        // Function to decrement the counter
+        function decrement(){
+            var c=document.getElementById("counting").innerHTML;
+            var c1=parseInt(c);
+            document.getElementById("counting").innerHTML=c1-1;
+        }
+        var today=new Date();
+       var time=today.getHours()+":"+today.getMinutes()+":"+today.getSeconds();
+        document.getElementById("l_timer").innerHTML=time;
+    </script>
 </body>
 </html>
